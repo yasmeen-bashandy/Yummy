@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- logo title -->
+    <link rel="icon" type="image/png" href="./images/images1.png" />
+    <!-- FontAwesome6.2.1 Css File  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- BootStrap5.3 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <!--  start nav  -->
+    <div class="side-nav min-vh-100 position-fixed d-flex top-0">
+      <div
+        class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4 text-white"
+      >
+        <div class="links">
+          <ul class="list-unstyled">
+            <li class="py-2 active" id="Search">Search</li>
+            <li class="py-2" id="categoriesLink">Categories</li>
+            <li class="py-2" id="AreaLink">Area</li>
+            <li class="py-2" id="IngredientsLink">Ingredients</li>
+            <li class="py-2" id="Contact">Contact Us</li>
+          </ul>
+        </div>
+        <div class="nav-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>
+              Copyright Yasmeen Ahmed© 2023 All Rights
+              <br />
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-header d-flex flex-column justify-content-between align-items-center min-vh-100 py-4 text-black"
+      >
+        <img src="./images/images1.png" alt="logo img" class="logo" />
+        <i
+          class="fa-solid open-close-icon fa-2x fa-align-justify sidebarBtn"
+        ></i>
+        <span>
+          <i role="button" id="mode" class="fa-solid fa-toggle-on fa-2x"></i>
+        </span>
+
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End nav  -->
+
+    <!-- start search  -->
+    <div class="container w-75" id="searchContent"></div>
+    <!-- End search  -->
+
+    <!-- start  main  -->
+    <div class="min-vh-100 position-relative">
+      <div class="sk-circle" id="loader">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+      <div class="container me-2">
+        <div class="row py-5 g-4" id="rowData"></div>
+      </div>
+    </div>
+    <!--end  main  -->
+
+    <!-- jquery js -->
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- main js file -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
