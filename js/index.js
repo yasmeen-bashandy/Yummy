@@ -1,5 +1,5 @@
 //!>>>>>>>>>>>> Global >>>>>>>>>>
-const links = document.querySelectorAll(".links li");
+let links = document.querySelectorAll(".links li");
 let rowData = document.getElementById("rowData");
 let searchContent = document.getElementById("searchContent");
 const mode = document.getElementById("mode");
@@ -90,50 +90,36 @@ $(document).ready(() => {
 
 //!>>>>>>>>>>>>>>>>>>> Function >>>>>>>>>>>>>>>>>>
 
-// open side navbar
 function openSideNav() {
+  $(".side-nav").animate({
+      left: 0
+  }, 500)
+
+
   $(".sidebarBtn").removeClass("fa-align-justify");
   $(".sidebarBtn").addClass("fa-x");
 
-  $(".side-nav").animate(
-    {
-      left: 0,
-    },
-    500
-  );
-  //animation  msh sh8aaaal
 
-  for (let i = 0; i < links.length; i++) {
-    $(".links li")
-      .eq(i)
-      .animate(
-        {
-          top: 0,
-        },
-        (i +links.length) * 100
-      );
+  for (let i = 0; i < 5; i++) {
+      $(".links li").eq(i).animate({
+          top: 0
+      }, (i + 5) * 100)
   }
 }
 
-// close side navbar
 function closeSideNav() {
-  let boxWidth = $(".side-nav .nav-tab").outerWidth();
-  $(".side-nav").animate(
-    {
-      left: -boxWidth,
-    },
-    500
-  );
+  let boxWidth = $(".side-nav .nav-tab").outerWidth()
+  $(".side-nav").animate({
+      left: -boxWidth
+  }, 500)
 
   $(".sidebarBtn").addClass("fa-align-justify");
   $(".sidebarBtn").removeClass("fa-x");
-  // animation msh sh8aaaal
-  $(".links li").animate(
-    {
-      top: 300,
-    },
-    500
-  );
+
+
+  $(".links li").animate({
+      top: 300
+  }, 500)
 }
 
 // function display Meals command between Api

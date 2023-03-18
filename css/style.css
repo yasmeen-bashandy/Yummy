@@ -57,9 +57,9 @@ i {
 .links .active {
   color: red;
 }
-.links li {
+/* .links li {
   top: 0px;
-}
+} */
 
 /***** nav end ****/
 
@@ -251,3 +251,7 @@ i {
   }
 }
 /***** loader End ****/
+.alert{
+  width: fit-content;
+}
+ 
