@@ -341,8 +341,8 @@ function displayMealDetails(meal) {
   }
 
   let cartona = `
-                <div onclick="getHomeMeals()" class="icon  d-flex justify-content-end p-4 " id="close">
-                <i class="fa-solid fa-xmark fa-2x"></i>
+                <div onclick="getHomeMeals()" class="icon  d-flex justify-content-end p-4 " >
+                <i  class="fa-solid fa-xmark fa-2x"></i>
             </div>
             <div class="col-md-4">
             
@@ -371,8 +371,11 @@ function displayMealDetails(meal) {
                 <a target="_blank" href="${meal.strYoutube}" class="btn btn-danger">Youtube</a>
             </div>
             `;
-  rowData.innerHTML = cartona;
+            rowData.innerHTML = cartona;
+           
 }
+
+
 
 function showSearchInputs() {
   searchContent.innerHTML = `
