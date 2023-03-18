@@ -50,6 +50,15 @@ i {
 .nav-header {
   background-color: var(--color-text);
 }
+@media (max-width: 600px) {
+  .nav-header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav-header i {
+
+      color:var(--color-text);
+
+}
 .side-nav {
   left: -256.562px;
   z-index: 99;
